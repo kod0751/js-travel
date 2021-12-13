@@ -99,24 +99,25 @@ img{
 /*==== HEADER ====*/
 .header {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 }
 
 .nav {
     display: flex;
-    height: 80px;
+    height: 5rem;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav__menu {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
 .nav__logo {
+    margin: 22px;
     font-size: 1.3rem;
     font-weight: var(--font-semi-bold);
 }
@@ -126,4 +127,37 @@ img{
         display: none;
     }
 };
+
+
+/*==== HOME ====*/
+
+.home__section {
     
+}
+
+.home {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.home__item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 340px;
+    right: 0;
+    left: 0;
+    margin: 3.5rem auto;
+}
+
+.home__image {
+    width: 340px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.home__title {
+    font-weight: var(--font-bold);
+    font-size: 3rem;
+}
