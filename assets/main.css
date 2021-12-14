@@ -89,7 +89,7 @@ img{
 }
 
 /*==== LAYOUT ====*/
-.container {
+.inner {
     max-width: 1200px;
     width: calc(100% - 2rem);
     margin-left: var(--mb-2);
@@ -104,7 +104,7 @@ img{
     left: 0;
 }
 
-.nav {
+.nav__container {
     display: flex;
     height: 5rem;
     justify-content: space-between;
@@ -135,8 +135,9 @@ img{
     
 }
 
-.home {
+.home__container {
     margin-top: 5rem;
+    height: 1575px;
     position: relative;
 }
 
@@ -161,3 +162,70 @@ img{
     font-weight: var(--font-bold);
     font-size: 3rem;
 }
+
+/*==== SUBSCRIBE ====*/
+
+.subscribe__container {
+
+}
+
+.subscribe__bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 356px;
+    background-color: #cae8e2;
+    row-gap: 2.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.subscribe__title {
+    margin-top: 1.5rem;
+    font-size: 36px;
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+.subscribe__title::after{
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 3px;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--dark-color);
+}
+
+.subscribe__text {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+}
+
+.subscribe__input {
+    width: 280px;
+    height: 40px;
+    outline: none;
+}
+
+.subscribe__btn {
+    background-color: #f1c8b2;
+    width: 280px;
+    height: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+}
+
