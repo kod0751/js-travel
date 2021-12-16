@@ -266,3 +266,90 @@ img{
     font-size: 18px;
     font-weight: 300;
 }
+
+/*==== Tours ====*/
+
+.tour__section {
+
+}
+
+.tour__container {
+    width: 340px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.tour {
+    margin-top: 70px;
+}
+
+.tour__image {
+    width: 340px;
+    height: 290px;
+    overflow: hidden;
+}
+
+.tour__text1 {
+    position: relative;
+    background: #f7e0d4;
+    width: 278px;
+    height: 296px;
+    right: 0;
+    left: 0;
+    margin: -50px auto 0;
+    padding: 1.8rem;
+}
+
+.tour__text2 {
+    position: relative;
+    background: #d7ecfa;
+    width: 278px;
+    height: 296px;
+    right: 0;
+    left: 0;
+    margin: -50px auto 0;
+    padding: 1.8rem;
+}
+
+
+.tour__text3 {
+    position: relative;
+    background: #cae8e2;
+    width: 278px;
+    height: 296px;
+    right: 0;
+    left: 0;
+    margin: -50px auto 0;
+    padding: 1.8rem;
+}
+
+.tour__text1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tour__text1 p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tour__text2 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tour__text2 p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tour__text3 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tour__text3 p {
+    font-size: 18px;
+    font-weight: 300;
+}
