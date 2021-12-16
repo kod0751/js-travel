@@ -165,10 +165,6 @@ img{
 
 /*==== SUBSCRIBE ====*/
 
-.subscribe__container {
-
-}
-
 .subscribe__bg {
     position: relative;
     display: flex;
@@ -229,3 +225,44 @@ img{
     padding: 10px;
 }
 
+/*==== Introduction ====*/
+
+.intro__section {
+
+}
+
+.intro__container {
+    position: relative;
+    width: 340px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.intro__title{
+    margin-top: 80px;
+}
+
+.intro__head {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.shape {
+    width: 267px;
+    height: 21px;
+    background: #f7e0d4;
+    margin-bottom: 20px;
+}
+
+.intro__text1 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+.intro__text2 {
+    font-size: 18px;
+    font-weight: 300;
+}
