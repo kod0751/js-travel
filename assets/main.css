@@ -109,6 +109,9 @@ img{
     height: 5rem;
     justify-content: space-between;
     align-items: center;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .nav__menu {
@@ -139,6 +142,9 @@ img{
     margin-top: 5rem;
     height: 1575px;
     position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .home__item {
@@ -164,6 +170,12 @@ img{
 }
 
 /*==== SUBSCRIBE ====*/
+
+.subscribe__container {
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 
 .subscribe__bg {
     position: relative;
@@ -350,6 +362,53 @@ img{
 }
 
 .tour__text3 p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*==== Counter ====*/
+
+.counter__section {
+
+}
+
+.counter__container {
+    width: 340px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.counters {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    margin-top: 90px;
+}
+
+.tour__conter {
+
+}
+
+.expirience__conter {
+    
+}
+
+.destinations__conter {
+    
+}
+
+.happyclients__conter {
+    
+}
+
+.counter__count {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.counter__text {
     font-size: 18px;
     font-weight: 300;
 }
