@@ -172,7 +172,7 @@ img{
     height: 275px;
     text-align: center;
     background-color: #fff;
-    opacity: .5;
+    opacity: .8;
     font-weight: var(--font-bold);
     font-size: 3rem;
 }
@@ -200,18 +200,17 @@ img{
         .home__container {
             height: 930px;
         }
-
+    
         .home__item {
             row-gap: .5rem
         }
     }
-    
 };
 
 
 
 
-   
+
 /*==== SUBSCRIBE ====*/
 
 .subscribe__container {
@@ -302,17 +301,20 @@ img{
 
 .intro__container {
     position: relative;
-    width: 340px;
-    right: 0;
-    left: 0;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 5rem auto 0;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .intro__title{
-    margin-top: 80px;
+    
 }
 
 .intro__head {
+    padding: .5rem;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 12px;
@@ -327,14 +329,37 @@ img{
 
 .intro__text1 {
     font-size: 18px;
-    margin-bottom: 18px;
     font-weight: 300;
+    padding: 1rem;
 }
 
 .intro__text2 {
     font-size: 18px;
     font-weight: 300;
+    grid-column: span 2;
 }
+
+
+@media screen and ( max-width: 1115px) {
+    .intro__container {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and ( max-width: 720px) {
+    .intro__container {
+        width: 340px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .intro__text2 {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
+
 
 /*==== Tours ====*/
 
