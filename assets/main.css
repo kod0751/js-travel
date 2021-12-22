@@ -148,7 +148,7 @@ img{
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    row-gap: 4.5rem;
+    row-gap: 5rem;
     align-items: center;
     justify-items: center;
 }
@@ -199,7 +199,10 @@ img{
     @media screen and ( max-width: 712px) {
         .home__container {
             height: 930px;
-            margin-bottom: 5rem;
+        }
+
+        .home__item {
+            row-gap: .5rem
         }
     }
     
@@ -219,8 +222,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 340px;
-    height: 356px;
+    height: 300px;
     background-color: #cae8e2;
     row-gap: 2.5rem;
     right: 0;
@@ -255,7 +257,7 @@ img{
 
 .subscribe__form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 1.3rem;
 }
 
@@ -267,12 +269,30 @@ img{
 
 .subscribe__btn {
     background-color: #f1c8b2;
-    width: 280px;
+    width: 140px;
     height: 40px;
     font-weight: 300;
     text-align: center;
     padding: 10px;
+    margin-left: 20px;
 }
+
+@media screen and ( max-width: 712px) {
+
+    .subscribe__bg {
+        height: 356px;
+    }
+
+    .subscribe__form {
+        flex-direction: column;
+    }
+    
+    .subscribe__btn {
+        width: 280px;
+        margin-left: 0;
+    }
+}
+
 
 /*==== Introduction ====*/
 
