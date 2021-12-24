@@ -121,6 +121,18 @@ img{
     margin-right: 1rem;
 }
 
+.nav__menu {
+
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: var(--mb-6);
+}
+
 .nav__search {
     position: relative;
     margin-right: .5rem;
@@ -160,9 +172,10 @@ img{
     opacity: 0;
 }
 
-.nav__menu {
+.nav__toggle {
     margin-top: 6px;
     font-size: 2rem;
+    display: none;
     cursor: pointer;
 }
 
@@ -175,6 +188,14 @@ img{
 @media screen and ( max-width: 768px) {
     .nav__search {
         display: none;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
     }
 };
 
