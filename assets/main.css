@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --header-height: 3rem;
+    --header-height: 5rem;
 
     /*==== Font weight ====*/
     --font-medium: 500;
@@ -99,10 +99,13 @@ img{
 /*==== HEADER ====*/
 .header {
     width: 100%;
-    position: absolute;
+    position: fixed;
+    background-color: #fff;
     top: 0;
     left: 0;
+    z-index: var(--z-fixed);
 }
+
 
 .nav__container {
     display: flex;
@@ -186,22 +189,21 @@ img{
 }
 
 @media screen and ( max-width: 768px) {
-    .nav__search {
-        display: none;
-    }
-
-    .nav__menu {
+    .nav__search, .nav__menu {
         display: none;
     }
 
     .nav__toggle {
         display: block;
     }
-};
+}
 
+/*==== SCROLL HEADER ====*/
+.scroll-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /*==== HOME ====*/
-
 .home__section {
     
 }
@@ -274,8 +276,6 @@ img{
         }
     }
 };
-
-
 
 
 
@@ -649,3 +649,4 @@ img{
         margin-right: auto;
     }
 }
+
