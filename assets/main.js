@@ -42,11 +42,12 @@ showMenu('nav__toggle', 'nav__menu');
 
 /* ==== REMOVE MENU ==== */
 
-const navLink = document.querySelectorAll('.nav__link')
-const navMenu = document.getElementById('nav__menu')
+const navLink = document.querySelectorAll('.nav__link');
+const navMenu = document.getElementById('nav__menu');
 
-function LinkAction(){
+function RemoveMenu() {
     navMenu.classList.remove('show')
 }
 
-navLink.forEach( n => n.addEventListener('click', LinkAction));
+navLink.forEach( n => n.addEventListener('click', RemoveMenu))
+
