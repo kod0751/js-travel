@@ -39,3 +39,14 @@ const showMenu = ( toggleId, navId ) => {
 }
 
 showMenu('nav__toggle', 'nav__menu');
+
+/* ==== REMOVE MENU ==== */
+
+const navLink = document.querySelectorAll('.nav__link')
+const navMenu = document.getElementById('nav__menu')
+
+function LinkAction(){
+    navMenu.classList.remove('show')
+}
+
+navLink.forEach( n => n.addEventListener('click', LinkAction));
