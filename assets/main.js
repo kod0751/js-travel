@@ -51,3 +51,13 @@ function RemoveMenu() {
 
 navLink.forEach( n => n.addEventListener('click', RemoveMenu))
 
+
+/* ==== TO TOP ==== */
+
+const scrollTop = document.getElementById('to-top')
+
+scrollTop.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0
+    })
+})

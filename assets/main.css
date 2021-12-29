@@ -682,3 +682,24 @@ img{
     }
 }
 
+/*==== To-TOP ====*/
+
+#to-top {
+    position: fixed;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    background-color: #62a094;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9;
+}
+
+#to-top .bx-up-arrow-alt {
+    font-size: 1.5rem;
+}
