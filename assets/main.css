@@ -288,12 +288,12 @@ img{
 @media screen and ( max-width: 1024px) {
 
     .home__container {
-        height: 525px;
+        height: 725px;
     }
 
     .home__image img {
-        width: 340px;
-        height: 205px;
+        width: 480px;
+        height: 305px;
         object-fit: cover;
     }
 
@@ -301,17 +301,41 @@ img{
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
         row-gap: 2rem;
     }
+}
 
-    @media screen and ( max-width: 712px) {
-        .home__container {
-            height: 930px;
-        }
-    
-        .home__item {
-            row-gap: .5rem
-        }
+@media screen and ( max-width: 768px) {
+
+    .home__container {
+        height: 525px;
     }
-};
+    
+    .home__image img {
+        width: 340px;
+        height: 205px;
+        object-fit: cover;
+    }
+
+    .home__item {
+        row-gap: .5rem
+    }
+}
+
+@media screen and ( max-width: 711px) {
+    
+    .home__image img {
+        width: 340px;
+        height: 205px;
+        object-fit: cover;
+    }
+
+    .home__container {
+        height: 930px;
+    }
+    
+    .home__item {
+        row-gap: .5rem
+    }
+}
 
 
 /*==== Introduction ====*/
@@ -367,6 +391,8 @@ img{
     .intro__container {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+        margin-top: 0;
     }
 }
 
@@ -375,6 +401,7 @@ img{
         width: 340px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        padding: 0;
     }
 
     .intro__text2 {
@@ -479,7 +506,7 @@ img{
 /*==== Counter ====*/
 
 .counter__section {
-
+    padding: 2rem;
 }
 
 .counter__container {
@@ -520,6 +547,26 @@ img{
 .counter__text {
     font-size: 18px;
     font-weight: 300;
+}
+
+@media screen and ( max-width: 1024px) {
+    .counters {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .counter__count {
+        font-size: 80px;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .counter__section {
+        padding: 0;
+    }
+
+    .counters {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 /*==== Plan ====*/
@@ -563,6 +610,12 @@ img{
 .plan__text p {
     font-size: 18px;
     font-weight: 300;
+}
+
+@media screen and ( max-width: 1024px) {
+    .plans {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 }
 
 
