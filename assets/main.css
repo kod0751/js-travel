@@ -748,11 +748,15 @@ img{
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    bottom: 2rem;
-    right: 2rem;
     z-index: 9;
+    transition: .5s;
 }
 
 #to-top .bx-up-arrow-alt {
     font-size: 1.5rem;
+}
+
+.to-top.show{
+    right: 2rem;
+    bottom: 2rem;
 }

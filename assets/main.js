@@ -54,6 +54,7 @@ navLink.forEach( n => n.addEventListener('click', RemoveMenu))
 
 /* ==== TO TOP ==== */
 
+const toTopShow = document.querySelector('.to-top')
 const scrollTop = document.getElementById('to-top')
 
 scrollTop.addEventListener('click', function () {
@@ -62,4 +63,10 @@ scrollTop.addEventListener('click', function () {
     })
 })
 
-/* ==== SWIPER ==== */
+window.onscroll= () => {
+    if (window.scrollY >= 400) {
+        toTopShow.classList.add('show')
+    } else {
+        toTopShow.classList.remove('show')
+    }
+}
