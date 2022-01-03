@@ -17,13 +17,28 @@ searchInput.addEventListener('blur', function() {
     searchInput.setAttribute('placeholder', '');
 });
 
-/* ==== SCROLL HEADER ==== */
+/* ==== SCROLL HEADER, TO-TOP ==== */
+
+const toTopShow = document.querySelector('.to-top')
+const scrollTop = document.getElementById('to-top')
+const header = document.getElementById('header');
+
+scrollTop.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0
+    })
+})
 
 window.onscroll = () => {
-    const header = document.getElementById('header');
-    if(this.scrollY >= 200) header.classList.add('scroll-header');
-    else header.classList.remove('scroll-header');
+    if(this.scrollY >= 200) {
+        header.classList.add('scroll-header')
+        toTopShow.classList.add('show')
+    } else {
+        header.classList.remove('scroll-header')
+        toTopShow.classList.remove('show')
+    }
 }
+
 
 /* ==== SHOW MENU ==== */
 
@@ -50,23 +65,3 @@ function RemoveMenu() {
 }
 
 navLink.forEach( n => n.addEventListener('click', RemoveMenu))
-
-
-/* ==== TO TOP ==== */
-
-const toTopShow = document.querySelector('.to-top')
-const scrollTop = document.getElementById('to-top')
-
-scrollTop.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0
-    })
-})
-
-window.onscroll= () => {
-    if (window.scrollY >= 400) {
-        toTopShow.classList.add('show')
-    } else {
-        toTopShow.classList.remove('show')
-    }
-}
