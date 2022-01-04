@@ -87,6 +87,10 @@ img{
     height: auto;
     display: block;
 }
+/*==== SECTION ====*/
+.section {
+    padding: 5rem 0 2rem;
+}
 
 /*==== LAYOUT ====*/
 .inner {
@@ -240,13 +244,7 @@ img{
 }
 
 /*==== HOME ====*/
-.home__section {
-    
-}
-
 .home__container {
-    position: relative;
-    margin-top: 5.5rem;
     height: 750px;
 }
 
@@ -339,11 +337,6 @@ img{
 
 
 /*==== Introduction ====*/
-
-.intro__section {
-
-}
-
 .intro__container {
     position: relative;
     display: grid;
@@ -412,18 +405,13 @@ img{
 
 
 /*==== Tours ====*/
-
-.tour__section {
-
-}
-
 .tour__container {
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
     row-gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    margin-top: 7rem;
+    margin: 5rem 0 0;
 }
 
 .tour {
@@ -504,14 +492,8 @@ img{
 }
 
 /*==== Counter ====*/
-
-.counter__section {
-    padding: 2rem;
-}
-
 .counter__container {
     text-align: center;
-    margin-top: 7rem;
 }
 
 .counters {
@@ -571,12 +553,8 @@ img{
 
 /*==== Plan ====*/
 
-.plan__section {
-    margin-bottom: 5rem;
-}
-
 .plan__container {
-    
+    margin: 5rem 0 0;
 }
 
 .plans {
@@ -585,7 +563,6 @@ img{
     grid-template-columns: 100%;
     column-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 7rem;
     justify-items: center;
 }
 
@@ -622,7 +599,7 @@ img{
 /*==== SUBSCRIBE ====*/
 
 .subscribe__container {
-    margin-top: 7rem;
+
 }
 
 .subscribe__bg {
@@ -700,13 +677,7 @@ img{
 
 
 /*==== Footer ====*/
-
-.footer__section {
-
-}
-
 .footer__container {
-    margin: 7rem auto 0;
     text-align: center;
     margin-bottom: 60px;
 }
