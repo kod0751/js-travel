@@ -426,7 +426,7 @@ img{
     column-gap: 2rem;
     row-gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    margin: 5rem 0 0;
+    margin-top: 5rem;
 }
 
 .tour {
@@ -569,7 +569,7 @@ img{
 /*==== Plan ====*/
 
 .plan__container {
-    margin: 5rem 0 0;
+    margin-top: 5rem;
 }
 
 .plans {
